@@ -1,0 +1,26 @@
+.chat_footer{
+    display: flex;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+
+.chat_footer > form {
+    flex: 1;
+    display: flex;
+}
+
+.chat_footer > form > input {
+    flex: 1;
+    outline-width: 0;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
