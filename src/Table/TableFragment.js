@@ -246,15 +246,6 @@ export class TableFragment extends Component {
             }),
           onRowUpdate: (newData, oldData) =>
             new Promise((resolve, reject) => {
-              // setTimeout(() => {
-              //   const dataUpdate = [this.data];
-              //   const index = oldData.tableData.id;
-              //   dataUpdate[index] = newData;
-              //   this.setData([dataUpdate]);
-  
-              //   resolve();
-              // }, 1000)
-             // console.log(newdata, oldData);
               if(newData.index === oldData.index &&
                 newData.icon === oldData.icon ) {
                 resolve();
@@ -288,14 +279,6 @@ export class TableFragment extends Component {
             }),
           onRowDelete: oldData =>
             new Promise((resolve, reject) => {
-              // setTimeout(() => {
-              //   const dataDelete = [...this.data];
-              //   const index = oldData.tableData.id;
-              //   dataDelete.splice(index, 1);
-              //   this.setData([...dataDelete]);
-                
-              //   resolve()
-              // }, 1000)
               this.props.deleteCategory(oldData.categoryName,
                 ()=> resolve(),
                 (error)=>resolve()

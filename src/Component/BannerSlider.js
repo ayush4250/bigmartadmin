@@ -22,7 +22,6 @@ const BannerSlider = (props) => {
     
       return (
         <div>
-        
           <AutoPlaySwipeableViews
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
             index={activeStep}
@@ -41,6 +40,9 @@ const BannerSlider = (props) => {
           </AutoPlaySwipeableViews>
           
         </div>
+       
+        
+       
       );
 }
 

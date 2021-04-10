@@ -14,7 +14,8 @@ import HomeFragment from '../Fragments/HomeFragment';
 import TableFragment from '../Table/TableFragment';
 import ContactFragment from '../Fragments/ContactFragment';
 import ChatFragment from '../Whatsapp/ChatFragment';
-import {Home , Category, Phonelink, ShoppingCart, Settings, PowerOff} from '@material-ui/icons';
+import {Home , Category, Phonelink, ShoppingCart, Settings, PowerOff, PollRounded} from '@material-ui/icons';
+import AddProduct from '../Fragments/AddProduct';
 
 const drawerWidth = 240;
 
@@ -55,6 +56,8 @@ export default function Dashboard() {
          return <TableFragment />
       case "ContactFragment":
         return <ContactFragment />
+      case "Products":
+        return <AddProduct />
     }
   }
 
@@ -94,9 +97,9 @@ export default function Dashboard() {
          <ListItemText primary="Manage Categories" />
        </ListItem>
 
-       <ListItem button onClick={e=>setfragment("ContactFragment")}>
-         <ListItemIcon>{<Settings />}</ListItemIcon>
-         <ListItemText primary="Settings" />
+       <ListItem button onClick={e=>setfragment("Products")}>
+         <ListItemIcon>{<PollRounded />}</ListItemIcon>
+         <ListItemText primary="Products" />
        </ListItem>
 
        <ListItem button>

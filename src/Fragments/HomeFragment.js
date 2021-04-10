@@ -530,11 +530,7 @@ export class HomeFragment extends Component {
                           return <BannerSlider Images={banners} />;
                          
                           case 1:
-                            <>
-                              <br />
-                              <br />
-                              <br />
-                              </>
+                           
 
                               return( <StripAdView 
                               image={item.strip_ad_banner}
@@ -542,11 +538,7 @@ export class HomeFragment extends Component {
                               );
 
                           case 2: 
-                          <>
-                              <br />
-                              <br />
-                              <br />
-                              </>
+                         
 
                           let products=[];
                                  for(let index =1;index < item.no_of_products +1; index++){
